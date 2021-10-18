@@ -16,9 +16,7 @@ export const RecordStoreModel = types
   })) // eslint-disable-line @typescript-eslint/no-unused-vars
   .actions((self) => ({
     saveRecords: (record: Record) => {
-      const newRecords = [record, ...self.records]
-      self.records.replace([])
-      self.records.replace(newRecords)
+      self.records.replace([record, ...self.records])
     },
   })) // eslint-disable-line @typescript-eslint/no-unused-vars
 

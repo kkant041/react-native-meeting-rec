@@ -1,6 +1,6 @@
 import React from "react"
 import { observer } from "mobx-react-lite"
-import { Dimensions, TextStyle, View, ViewStyle, Text, Platform } from "react-native"
+import { Dimensions, TextStyle, View, ViewStyle, Text } from "react-native"
 import { color, spacing, typography } from "../../theme"
 import { StackScreenProps } from "@react-navigation/stack"
 import { NavigatorParamList } from "../../navigators"

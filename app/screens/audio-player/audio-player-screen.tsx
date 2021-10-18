@@ -10,7 +10,6 @@ import { Header, Screen, Slider, Text } from "../../components"
 import { ActionButton } from "../record-audio/components/action-buttion"
 import AntDesign from "react-native-vector-icons/dist/AntDesign"
 import Ionicons from "react-native-vector-icons/dist/Ionicons"
-import MaterialCommunityIcons from "react-native-vector-icons/dist/MaterialCommunityIcons"
 import AudioRecorderPlayer from "react-native-audio-recorder-player"
 import { getTimeDifference } from "../../utils/time-conversions"
 
@@ -88,17 +87,11 @@ const SEC2_DIV1: ViewStyle = { ...FULL, ...ALIGN_CENTER, marginTop: 12 }
 const SEC2_DIV2: ViewStyle = { ...FULL, ...ALIGN_CENTER, marginTop: 30 }
 // For correction
 const STOP_ICON: ViewStyle = { paddingLeft: 2 }
-const HIGHLIGHT_ICON: ViewStyle = { paddingTop: 2 }
 
 const SHOW_DURATION: TextStyle = {
   fontSize: windowWidth / 8,
   color: color.text,
   paddingRight: 6,
-}
-const ALERT_CONT: ViewStyle = {
-  position: "absolute",
-  top: 100,
-  alignSelf: "center",
 }
 
 export const AudioPlayerScreen: React.FC<
